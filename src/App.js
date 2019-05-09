@@ -23,7 +23,7 @@ function TodoForm({ addTodo }) {
   return (
     <div className="inputRow">
       <form onSubmit={handleSubmit}>
-        <input type="text" className="input" value={value} placeholder="Enter todo..." onChange={e => setValue()} />
+        <input type="text" className="input" value={value} placeholder="Enter todo..." onChange={e => setValue(e.target.value)} />
       </form>
       <div id="submitBtn" onClick={handleSubmit}>Add</div>
     </div >
